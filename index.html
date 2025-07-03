@@ -1,46 +1,38 @@
+
 <!DOCTYPE html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <title>Desafio Condiciones</title>
+    <title>Desafío Condiciones</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
+    <!-- DESAFÍO 1 -->
     <div id="containerDesafio1">
       <h2>Selecciona tus stickers</h2>
       <h2>Elige hasta 10 stickers</h2>
 
       <div class="sticker">
-        <img
-          src="./assets/img/naruto1.jpeg"
-          alt="Sticker 1"
-        />
-        <br />
+        <img src="./assets/img/naruto1.jpeg" alt="Sticker 1" />
         <input type="number" id="sticker1" min="0" max="10" value="0" />
       </div>
 
       <div class="sticker">
-        <img
-          src="./assets/img/naruto2.jpeg"
-          alt="Sticker 2"
-        />
-        <br />
+        <img src="./assets/img/naruto2.jpeg" alt="Sticker 2" />
         <input type="number" id="sticker2" min="0" max="10" value="0" />
       </div>
 
       <div class="sticker">
-        <img
-          src="./assets/img/naruto3.jpg"
-          alt="Sticker 3"
-        />
-        <br />
+        <img src="./assets/img/naruto3.jpg" alt="Sticker 3" />
         <input type="number" id="sticker3" min="0" max="10" value="0" />
       </div>
 
       <br /><br />
       <button onclick="verificarStickers()">Verificar</button>
-      <p id="resultado"></p>
+      <p id="resultado1"></p>
     </div>
+
+    <!-- DESAFÍO 2 -->
     <div id="containerDesafio2">
       <h2>Ingrese su password</h2>
       <select id="digito1">
@@ -52,7 +44,6 @@
         <option value="4">4</option>
         <option value="5">5</option>
         <option value="6">6</option>
-        <option value="7">7</option>
         <option value="8">8</option>
         <option value="9">9</option>
       </select>
@@ -84,16 +75,17 @@
 
       <br /><br />
       <button onclick="verificarClave()">Ingresar</button>
-
-      <p style="color: black" id="resultado"></p>
+      <p id="resultado2"></p>
     </div>
+
+    <!-- DESAFÍO 3 -->
     <div id="containerDesafio3">
       <img
         id="toggleBorde"
         onclick="toggleBorde()"
         width="400px"
-        src="https://images.unsplash.com/photo-1689308271305-58e75832289b?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8"
-        alt="."
+        src="https://images.unsplash.com/photo-1689308271305-58e75832289b?fm=jpg&q=60&w=3000"
+        alt="Imagen con borde"
       />
     </div>
 
